@@ -1,0 +1,9 @@
+{
+    "name": "my-plugin",
+    "version": "0.0.1",
+    "license": "MIT",
+    "dependencies": {
+        "typescript": "^4.4.3"
+    },
+    "main": "out/"
+}

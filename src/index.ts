@@ -21,9 +21,13 @@ function init(modules: { typescript: typeof import("typescript/lib/tsserverlibra
   
       // Remove specified entries from completion list
       proxy.getCompletionsAtPosition = (fileName, position, options) => {
+        // This is just to let you hook into something to
+        // see the debugger working
+        debugger        
+
         const prior = info.languageService.getCompletionsAtPosition(fileName, position, options);
         if (!prior) return
-  
+
         const oldLength = prior.entries.length;
         prior.entries = prior.entries.filter(e => whatToRemove.indexOf(e.name) < 0);
   

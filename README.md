@@ -44,3 +44,7 @@ TSS_DEBUG=9559 code example
 You can then use the launch options in this root project to connect your debugger to the running TSServer in the other window. To see changes, run the command palette "TypeScript: Reload Project" to restart the TSServer for the project.
 
 Make sure that the TypeScript version on that project runs from your `node_modules` and not the version which is embedded in vscode. You can see the logs via the vscode command 'TypeScript: Open TS Server Logs." ( search for 'Loading tsserver-plugin' to see whether it loaded correctly. )
+
+### What Now?
+
+This project has a `debugger` statement inside the completions which will trigger on completions, you can get that running and then you have proven the toolset works and get started building your plugin.

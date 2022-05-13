@@ -2,7 +2,7 @@
 
 <img src="./docs/screenshot.png">
 
-This repo has two projects: s
+This repo has two projects:
 
 - `/` is a TSServer Plugin 
 - `/example` is a TypeScript project which uses the root TSServer Plugin
